@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Streaming</title>
+    <style>
+      body {
+        background-color: #ffffff;
+      }
+      .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 90vh;
+      }
+      #video {
+        width: 50%; border-radius: 20px;
+      }
+      #icons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 1em;
+      }
+      #icons img {
+        width: 2em;
+        margin: 0 0.5em;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img src="{{ url_for('video') }}" id="video" />
+      <div id="icons">
+        <a href="https://www.bu.edu/" target="_blank">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Boston_University_seal.svg/1200px-Boston_University_seal.svg.png" alt="Boston University" />
+        </a>
+        <a href="https://www.instagram.com/amievbolatbek/" target="_blank">
+          <img src="https://www.instagram.com/static/images/ico/favicon-192.png/68d99ba29cc8.png" alt="Instagram" />
+        </a>
+      </div>
+    </div>
+    <p style="text-align: center;">Bolatbek Amiyev 2023</p>
+  </body>
+</html>

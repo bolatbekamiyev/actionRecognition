@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Design</title>
+    <style>
+      body {
+        background-color: black;
+      }
+
+      .outer-rectangle {
+        width: 850px;
+        height: 344px;
+        background-color: black;
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .inner-rectangle {
+        width: 80%;
+        height: 80%;
+        background-color: white;
+        border-radius: 15px;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-gap: 10px;
+        padding: 20px;
+      }
+
+      .box {
+        background-color: red;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-weight: bold;
+        font-size: 24px;
+      }
+
+      .box:nth-child(3) {
+        background-color: blue;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+
+      .box:nth-child(1),
+      .box:nth-child(5) {
+        background-color: green;
+      }
+
+      .box:nth-child(1),
+      .box:nth-child(2) {
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+      }
+
+      .box:nth-child(4),
+      .box:nth-child(5) {
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+      }
+
+      .box:nth-child(3) {
+        border-radius: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="outer-rectangle">
+      <div class="inner-rectangle">
+        <div class="box">A</div>
+        <div class="box">B</div>
+        <div class="box">C</div>
+        <div class="box">D</div>
+        <div class="box">E</div>
+      </div>
+    </div>
+  </body>
+</html>
